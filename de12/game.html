@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <!-- ⑥↓タイトルを変えてみよう -->
+    <title>game作り</title>
+    <!-- ⑤スタイルシートの設定をしよう --><link rel="stylesheet" href="./css/style.css">
+    <!-- h1.htmlからある行をコピペしてくればOK -->
+</head>
+<body>
+    <h1>左右あてゲーム</h1>
+    <!-- 塊ごとにdivタグで区切るようにしましょう。 -->
+    <h3>説明</h3>
+    <div>このゲームは事前に左右を決めて置きそれがランダムに出される回答と一致<br>
+        するかを競うゲームです。最後には自分がどれだけ連続で当てられたかをわかるようにしました
+    </div>
+    <h3>ソースコード</h3>
+    <pre><cord>import random
+
+        migi=0
+        hidari=0
+        mylist=["migi","hidari"]
+        count=-1
+        #----------------------------------
+        #答えの方の右左
+        target=(random.choice(mylist))
+        #はずれかあたりか
+        while True:
+            count += 1
+            asw=input("migi or hidari")
+            number=(random.choice(mylist))
+            print(number,"が答えです")
+        
+            if number==asw:
+                print("正解です！繰り返します")
+            else:
+                print("不正解です！終わります。")
+                break
+        print("---------finish-------------")
+        print("あなたは",count,"回連続で正解できました！！")</cord></pre>
+        <h3>感想</h3>
+        <div>実際に作ってみて何回か思うように動かなくて先輩のコードを見ていろいろ調べながら<br>
+            やってみたらいい感じにできたのでよかったです。単純なゲームでもここまで複雑になる<br>
+            ので世の中で売れているゲームはどれだけのコードがあるのか想像したらやばかった。
+        </div>
+
+</body>
+</html>
