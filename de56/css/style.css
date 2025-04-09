@@ -27,7 +27,7 @@ html, body {
 	color: #393939;
     margin-left: 15px;
     margin-bottom: 40px;
-	background: #faebd7;
+	background: #CCCCCC	;
 }
 h1{
     text-indent: 0em;
@@ -51,4 +51,11 @@ span.blackback{
     background: #393939;
     color: #efefef;
 }
+
+h1 {
+    color: #000000;/*文字色*/
+    padding: 0.5em 0;/*上下の余白*/
+    border-top: solid 3px #000000;/*上線*/
+    border-bottom: solid 3px #000000;/*下線*/
+  }
 
