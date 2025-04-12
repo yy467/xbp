@@ -27,7 +27,7 @@ html, body {
 	color: #393939;
     margin-left: 15px;
     margin-bottom: 40px;
-	background: #CCCCCC	;
+	background: #FFF	;
 }
 h1{
     text-indent: 0em;
@@ -53,47 +53,12 @@ span.blackback{
 }
 
 h1 {
-    position: relative;
-    display: inline-block;
-    padding: 0 55px;
-  }
-  
-  h1:before, h1:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    display: inline-block;
-    width: 45px;
-    height: 2px;
-    border-top: solid 1px black;
-    border-bottom: solid 1px black;
-  }
-  
-  h1:before {
-    left:0;
-  }
-  h1:after {
-    right: 0;
-  }
+  padding: 0.25em 0.5em;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+  background: transparent;/*背景透明に*/
+  border-left: solid 5px #999999;/*左線*/
+}
 
 h2 {
-    position: relative;
-    padding: 0.25em 1em;
-    border-top: solid 2px black;
-    border-bottom: solid 2px black;
-  }
-  h2:before, h2:after {
-    content: '';
-    position: absolute;
-    top: -7px;
-    width: 2px;
-    height: -webkit-calc(100% + 14px);
-    height: calc(100% + 14px);
-    background-color: black;
-  }
-  h2:before {
-    left: 7px;
-  }
-  h2:after {
-    right: 7px;
-  }
+  background: linear-gradient(transparent 70%, #EEEEEE	 70%);
+}
